@@ -1,0 +1,289 @@
+<html>    
+<head>  
+<title> Login Page </title>  
+<style>   
+	Body 
+	{  
+ 		 font-family: Calibri, Helvetica, sans-serif;  
+ 		 background-color: #FFFFFF;  
+		width: 100%;
+		height:100%;
+		
+	 }   
+	button 
+	{   
+       		background-color:  ; 
+     		width: 40%;  
+			height: 8%; 
+			padding: 3px;   
+       		margin: 8px 0px;   
+       		cursor: pointer;  
+			border-radius: 3px;
+ 	 }   
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  
+  color:#FFFFFF;
+}
+
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+	
+	 
+	 
+	 
+		.input[type=checkbox]
+		{
+		
+		
+		}
+		
+	 button:hover 
+	{   
+    		    opacity: 0.7;   
+	 }   
+  
+    .container 
+	{
+		width: 30%; height: 60%; 
+        padding: 40px;   
+		position: absolute;
+		background-image: linear-gradient(to right,rgb(46,8,65) ,rgb(127, 74, 152));
+		justify-content: right;
+		margin: 0 auto;
+		border-radius: 20px;
+		
+	 } 
+	 .back
+	{
+		width: 70%; height: 70%; 
+		background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255));
+
+	 } 
+	  .back1
+	{
+		width: 100%; height: 60%; padding: 1 px;    
+		background-image: linear-gradient(to right,rgb(46,8,65) ,rgb(127, 74, 152));
+	 } 
+	 
+	 .back3
+	{
+		width: 100%; height: 50%; padding: 10px;    
+		background-image: linear-gradient(to right,rgb(64, 64, 64),rgb(51, 51, 51));
+	 } 
+	
+	
+	.part1
+	{
+		width: 40%; height:40%; 
+		padding: 100px ;
+	}
+	.part2
+	{
+		width: 40%; height:40%; 
+		padding: 80px ;
+		text-align: left;
+		 position: absolute;
+		left: 50%;
+		margin: -25px 0 0 -25px;
+	} 
+	.part3
+	{
+		width:720px;
+		height:440px;
+		
+		 position: absolute;
+		 background-repeat: no-repeat;
+		 background-image: url('33.jpg');
+		right: 50%;
+		margin: 10px 0 0 10px ;
+	} 
+	.part6
+	{
+		width:1000px;
+		height:740px;
+		
+		
+		text-align: left;
+		 position: absolute;
+		
+		 position: absolute;
+		 background-repeat: no-repeat;
+		 background-image: url('111.jpg');
+		 background-size: 1000px 510px;
+		left: 35%;
+		margin: 1px 0 0 1px ;
+	} 
+	 .back2
+	{
+		width: 80%; height: 70%;   
+		 background-color: #FFFFFF;  
+		
+	} 
+	 .links
+	{
+		text-align: right;
+		font-size: 20px;
+	} 
+	 .back4
+	{
+		width: 100%; height: 60%;   
+		background-image: linear-gradient(to right,rgb(230, 230, 230),rgb(230, 230, 230));
+	 } 
+	
+	
+}
+
+	
+	
+</style>   
+</head>    
+<body>    
+    <form action="login.php" method="POST"> <br><br>
+	<div class = "back1">
+	       <div class = "part1"> 
+				<font face="Comic Sans MS" size="7" color="white">Book Store Management System</font>
+				<br><font size="4"face="cursive" color="white">
+					Book Store Management System  web-based solution to improve  book store business and maintaing data of book shop.
+				</font>
+			</div>
+	</div>
+	<div class = "back2">
+	
+		<div class = "part3"> 
+		
+		</div>
+		<div class = "part2"> 
+			<h2>Online Book Store Management</h2><font  size="5" color="gray">
+			In the digitalization India our developed book store application play 
+			the vital roles, everyone wants to keep their purchase and sale recods safe.
+			In this situation, to access the sales and  purchase records in anywhere in the
+			world is challenge for large and small book store.
+			Nowadays Online Book Management is on trend.
+			In the recent survey every book professoinals wants to keep their  book
+			records online and acesss from anywhere  
+			Our system providing solution to the book store to move business and sale .</font>
+
+		</div>
+	</div>
+	<div class = "back4"><center><br>
+	<font size="6" color="Black"><u>Book Store System</u></font><br><br>
+	<font size="4" color="Black">We are providing website based book store management system.</font>
+	<br><br><br>
+	<font size="6" color="Black"><u>Features for User</u></font><br><br>
+	<font size="4" color="Black">*It provides easy search technique of book by simply typing starting alphabet.<br><br>
+								*It genrate bill.<br><br>
+								
+								*It maintains the stock report in book store.<br><br>
+								*It also includes atomic validation of data during it sales and purchase.<br><br>
+								
+</font>
+	
+	</center>
+	</div>
+	
+	
+	
+	
+		
+	<div class="back">
+	<div class="container"> 
+		<font  size="7" face = "Times New Roman" color="white">Login</font><hr><br><br>
+			
+            <div class="form__group field">
+			<label class="form__label" ><b>Username</b></label> <br>
+			<input type="text" class="form__field" placeholder="Enter Username"id="uname" name="username" required >  
+			<hr>
+             <br>
+			 <label  class="form__label" ><b>Enter Password</b></label> 
+            <input type="password" class="form__field" placeholder="Enter Password" name="passwords" id="pass" required ><hr>  <br> 
+			<input type="checkbox" onclick="myFunction()"> <label class="l1">Show Password</label>
+			
+			</div>
+			<script>
+			function myFunction() 
+			{
+				var x = document.getElementById("pass");
+				if (x.type === "passwords") 
+				{
+					x.type = "text";
+				} 
+				else 
+				{
+					x.type = "passwords";
+				}
+			}
+			</script>
+<br>
+            <button type="submit" value="submit" id="btn"><font size="5" face = "Times New Roman">Login</font></button>
+			<button type="reset" value="reset" id="btn"><font size="5" face = "Times New Roman">Reset</font></button>
+			<br>
+           </div> 
+		   
+		   <div class = "part6"> 
+		
+			</div>
+		   
+		   
+		   
+		  </div> 
+		  
+		  
+		  <div class = "back3">
+		</div>
+			
+    </form>     
+</body>     
+</html>  

@@ -1,0 +1,13 @@
+select * from bookuser;
+select * from booktype;
+select * from book;
+select * from sell;
+select * from selldetail;
+select * from stockin;
+
+INSERT INTO bookuser(loginname,passwords,bookstorename,mobile,isactive)VALUES('Pallavi','Rink@11','Shree Book Stall','9359153078','true');
+
+INSERT INTO booktype(type)VALUES('Fantasy');
+
+INSERT INTO book(bookname,description,booktypeid,author)VALUES('To Kill a Mockingbird','To Kill a Mockingbird is both a young girl’s coming-of-age story and a darker drama ',1,'Harper Lee');
+

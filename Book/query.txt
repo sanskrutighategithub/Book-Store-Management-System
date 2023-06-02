@@ -1,0 +1,43 @@
+--select * from medicinetype;
+--INSERT INTO medicinetype VALUES(1,'Tablet');
+--INSERT INTO medicinetype VALUES(2,'Syrup');
+INSERT INTO medicinetype VALUES(3,'Injection');
+--select * from medicines;
+--INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Crosin','pain relief',1,'true',NOW());
+ --INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon)VALUES('Myton40','high blood pressure and heart failure.',1,'true',NOW());
+--INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Nicip Plus','elieving pain',1,'true',NOW());
+-- VALUES('Okacet','pain relief',1,'true',NOW());
+--INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Ascoril','pain relief',2,'true',NOW());
+INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Cheston Cough','pain relief',2,'true',NOW());
+-- VALUES('Cofsils','pain relief',1,'true',NOW());
+-- VALUES('Emeset','pain relief',1,'true',NOW());
+-- VALUES('Acetaminophen','pain relief',1,'true',NOW());
+--INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Remdesiver','pain relief',3,'true',NOW());
+--INSERT INTO medicines (medicinename,description,medicinetypeid,isactive,createdon) VALUES('Subcutaneous','pain relief',3,'true',NOW());
+
+$medicineid = $_POST['medicine'];
+	$medicineuserid = $_SESSION["id"];
+	$quantity = $_POST['quantity'];
+	$cost = $_POST['cost'];
+select * from stockin;
+select * from  sell;
+select * from medicine;
+select * from medicinetype;
+select * from selldetail;
+select * from mediuser;
+select * from sell;
+select * from selldetail;
+delete * from sell;
+delete * from selldetail;
+
+select * from medicinetype;
+select * from stockin;
+select * from mediuser;
+select * from medicine;
+INSERT INTO mediuser VALUES(1,'Meera');
+UPDATE medicine
+SET description = 'used to treat coronavirus disease'
+WHERE medicine.id = 4;
+UPDATE mediuser
+SET mediname = 'Shree Medical'
+WHERE mediuser.id = 2;
